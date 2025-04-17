@@ -1,0 +1,14 @@
+Package: treenotypR
+Type: Package
+Title: This is a collection of tools for phenotyping individual trees using point cloud data
+Version: 0.1.0
+Author: Sadeepa Jayathunga and Robin Hartley
+Maintainer: Sadeepa Jayathunga <sadeepajayathunga@scionresearch.com>
+Description: This R package offers a suite of tools designed for foresters to perform individual tree-level phenotyping. It supports analysis using 3D point cloud data generated from various laser scanning methods, including airborne laser scanning (ALS), unmanned aerial laser scanning (ULS), mobile laser scanning (MLS), and terrestrial laser scanning (TLS).Some functions can also be used with Structure-from-Motion (SfM) photogrammetric point cloud data.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Config/roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Imports: circular, data.table, dplyr, ForestTools, future, geometry, lidR, magrittr, moments, purrr, raster, sf, smoothr, terra, tibble, tidyr, TreeLS, VoxR
+
