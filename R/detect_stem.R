@@ -223,6 +223,12 @@ detect_stem <- function(
       dplyr::mutate(dplyr::across(dplyr::any_of(available_cols), as.integer))
   }
 
+  # Convert logical 'Stem' attribute to numeric
+  stem_points_class@data$Stem <- as.numeric(stem_points_class@data$Stem)
+
+  # Add the 'Stem' attribute to the LAS header
+  stem_points_class <- add_lasattribute(stem_points_class, name = "Stem", desc = "Stem_points")
+
   # Return the filtered stem points.
   return(stem_points_class)
 }
